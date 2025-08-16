@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guest Book</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #87CEEB 50%, #ffffff 50%);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: bgShift 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes bgShift {
+      0% {
+        background: linear-gradient(180deg, #87CEEB 50%, #ffffff 50%);
+      }
+      100% {
+        background: linear-gradient(180deg, #a3daf2 50%, #f5f5f5 50%);
+      }
+    }
+
+    .container {
+      width: 50%;
+      max-width: 600px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007acc;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea,
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #007acc;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #005f99;
+    }
+
+    #messageSaved {
+      color: green;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    #showMessages {
+      margin-top: 20px;
+    }
+
+    .messageCard {
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #f9f9f9;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .messageCard .messageContent {
+      font-style: italic;
+      color: #333333;
+    }
+
+    .messageCard .messageDetail {
+      font-size: 0.9em;
+      color: #666666;
+      margin-top: 5px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bharath's Guest Book</h1>
+
+    <label for="msg">Message:</label>
+    <textarea name="message" id="msg"></textarea>
+
+    <label for="fname">First Name:</label>
+    <input type="text" name="firstname" id="fname" />
+
+    <label for="lname">Last Name:</label>
+    <input type="text" name="lastname" id="lname" />
+
+    <input type="submit" id="savemessage" value="Save Message" />
+    <p id="messageSaved"></p>
+
+    <input type="submit" id="getmessages" value="View all Messages" />
+    <div id="showMessages"></div>
+  </div>
+
+  <script
+  type="text/javascript"
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js">
+</script>
+<script src="scripts.js"></script>
+</body>
+</html>
