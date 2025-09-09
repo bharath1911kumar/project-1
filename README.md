@@ -4,7 +4,7 @@
 
 ## 1. Architecture Diagram
 
-![Architecture Diagram](images/DIAGRAM.png)
+![Architecture Diagram](DIAGRAM.png)
 
 **Project short description**  
 This project demonstrates **serverless web hosting on AWS**, leveraging fully managed cloud services to build a scalable, cost-effective, and highly available web application without traditional server management.
