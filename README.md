@@ -32,9 +32,11 @@ This project demonstrates **serverless web hosting on AWS**, leveraging fully ma
 
 > There are 6 steps below. Replace each placeholder sentence with your own explanation and add the corresponding PNG to `images/step1.png`, `images/step2.png`, etc.
 
-### Step 1 — [Step Title]
-_Replace this line with your description for Step 1._  
-![Step 1](images/step1.png)
+### Step 1 — [Prepare the Frontend]
+_Create an HTML page with a form containing fields for name, email, and message and include "Save" and "View Messages" controls.
+Add JavaScript that sends a POST request to save contact details and a GET request to retrieve messages.
+Place a screenshot or wireframe showing the form and UI interaction._  
+
 
 ---
 
