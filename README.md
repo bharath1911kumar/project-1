@@ -4,10 +4,7 @@
 
 ## 1. Architecture Diagram
 
-> Replace the image below with your architecture diagram (PNG / SVG).  
-> Use `images/architecture-diagram.png` or any raw GitHub URL.
-
-![Architecture Diagram](DIAGRAM.png)
+![Architecture Diagram](images/DIAGRAM.png)
 
 **Project short description**  
 This project demonstrates **serverless web hosting on AWS**, leveraging fully managed cloud services to build a scalable, cost-effective, and highly available web application without traditional server management.
